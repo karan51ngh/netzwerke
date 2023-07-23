@@ -1,13 +1,11 @@
 # Computer Networking
 
 Index of Content:
-- [Basics](#basics)
-    - [Internet](#internet)
-        - [How is Internet Connected](#how-are-these-computers-connected)
-    - [World Wide Web (WWW)](#world-wide-web-www)
-    - [Difference between Internet and WWW](#difference-between-internet-and-www)
-
-## Basics
+- [Internet](#internet)
+    - [How is Internet Connected](#how-are-these-computers-connected)
+- [World Wide Web (WWW)](#world-wide-web-www)
+- [Difference between Internet and WWW](#difference-between-internet-and-www)
+- [OSI Model](#osi-model)
 
 - ### Internet
 
@@ -33,3 +31,41 @@ Index of Content:
     - **Function**: The internet provides the infrastructure for communication between devices, while the World Wide Web provides a way to access and share information and resources, including text, images, videos, and other content.
     - **Scope**: The internet is a much broader concept than the World Wide Web, as it includes many other types of communication beyond accessing websites and resources, such as email, messaging, file transfer, and more.
     - **Summary**: the internet is the underlying global network of interconnected devices, while the World Wide Web is a specific application of the internet that allows users to access and share information and multimedia resources through web browsers.
+    
+- ### OSI Model
+
+	- The OSI model is a conceptual framework that standardizes the functions of a communication system into seven distinct layers. Each layer represents a specific set of tasks and protocols that work together to enable communication between network devices. Here are the key points for each layer (from 7th layer to 1st layer): 
+        - **Application Layer**:
+            - The topmost layer that interacts directly with the **end-user** applications.
+            - Provides services and protocols for tasks such as email, file transfer, and web browsing.
+            - Examples of application layer **protocols** include HTTP, FTP, SMTP, and DNS.
+            - Examples of application layer: Browsers, Messaging apps etc.
+        - **Presentation Layer**:
+            - Responsible for **data formatting**, **encryption**, and **compression**.
+            - Converts the data received from the application layer into a standard **machine readable** binary format for transmission.
+            - Handles encryption and decryption to ensure data security.
+            - Example formats include ASCII, JPEG, and MPEG.
+        - **Session Layer**:
+            - Establishes, manages, and terminates communication sessions between applications.
+            - Synchronizes dialogue between the sender and receiver.
+            - Handles session checkpointing, recovery, and security.
+        - **Transport Layer**:
+            - Ensures reliable, error-free, and orderly delivery of data between end systems.
+            - Establishes and terminates connections between devices.
+            - Segments and reassembles data into manageable units.
+            - Examples of transport layer protocols are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+        - **Network Layer**:
+            - Focuses on the **logical addressing** and **routing** of data across multiple networks.
+            - Translates logical addresses (e.g., IP addresses) into physical addresses (e.g., MAC addresses).
+            - Routing protocols, such as IP (Internet Protocol), operate at this layer to determine the optimal path for data transmission.
+        - **Data Link Layer**:
+            - Responsible for the **reliable transmission** of data between directly connected network nodes.
+            - Divided into two sublayers: the Logical Link Control (LLC) sublayer and the Media Access Control (MAC) sublayer.
+            - LLC provides flow control and error checking.
+            - MAC controls access to the physical medium and handles addressing (e.g., MAC addresses).
+        - **Physical Layer**:
+            - The lowest layer of the OSI model.
+            - Deals with the physical **transmission** of data over the network.
+            - Concerned with the electrical, mechanical, and physical aspects of network interfaces.
+            - Examples of physical layer components include cables, connectors, network interface cards (NICs), and modulation techniques.
+	- The OSI model serves as a reference for understanding network protocols and their interactions. In practice, most networks use the **TCP/IP** protocol suite, which combines several OSI layers into fewer layers.
